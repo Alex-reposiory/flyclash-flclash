@@ -601,7 +601,7 @@ function overwriteProxyGroups(params) {
             icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png"
         },
         {
-            name: "AL-自动选择",
+            name: "ALL-自动选择",
             type: "url-test",
             url: "https://cp.cloudflare.com",
             interval: 300,
@@ -616,7 +616,7 @@ function overwriteProxyGroups(params) {
             icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png"
         },
         {
-            name: "🤖 AIGC",
+            name: "🤖AIGC",
             type: "select",
             proxies: ["US-自动选择", "🎯节点选择", "HK-自动选择", "JP-自动选择", "KR-自动选择", "SG-自动选择", "UK-自动选择", "FR-自动选择", "DE-自动选择", "TW-自动选择", "NL-自动选择", "0.1倍率-自动选择", "OR-自动选择"],
             icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png"
