@@ -520,12 +520,12 @@ function overwriteProxyGroups(params) {
             icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png"
         },
         {
-            name: "US - 手动选择",
+            name: "US-手动选择",
             regex: new RegExp(`^(?=.*${includeTerms.US})(?!.*${excludeTerms}).*$`, "i"),
             icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png"
         },
         {
-            name: "UK - 手动选择",
+            name: "UK-手动选择",
             regex: new RegExp(`^(?=.*${includeTerms.UK})(?!.*${excludeTerms}).*$`, "i"),
             icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/UK.png"
         },
