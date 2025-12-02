@@ -481,7 +481,7 @@ function overwriteProxyGroups(params) {
         { name: "DE-自动选择", regex: new RegExp(`^(?=.*${includeTerms.DE})(?!.*${excludeTerms}).*$`, "i") },
         { name: "NL-自动选择", regex: new RegExp(`^(?=.*${includeTerms.NL})(?!.*${excludeTerms}).*$`, "i") },
         { name: "0.1倍率-自动选择", regex: new RegExp(`^(?=.*0\.1)(?!.*${excludeTerms}).*$`, "i") },
-            name: "其它 - 自动选择",
+            name: "其它-自动选择",
             regex: new RegExp(`^(?!.*(?:${allCountryTerms}|${excludeTerms})).*$`, "i")
         }
     ];
@@ -585,7 +585,7 @@ function overwriteProxyGroups(params) {
             name: "手动选择",
             type: "select",
             icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Cylink.png",
-            proxies: ["HK - 手动选择", "JP - 手动选择", "KR - 手动选择", "SG - 手动选择", "US - 手动选择", "UK - 手动选择", "FR - 手动选择", "DE - 手动选择", "TW - 手动选择", "NL-手动选择"],
+            proxies: ["HK-手动选择", "JP-手动选择", "KR-手动选择", "SG-手动选择", "US-手动选择", "UK-手动选择", "FR-手动选择", "DE-手动选择", "TW-手动选择", "NL-手动选择"， "其他-手动选择"],
         },
         {
             name: "自动选择",
