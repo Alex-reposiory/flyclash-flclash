@@ -21,7 +21,7 @@ function overwriteBasicOptions(params) {
         mode: "rule",
         "log-level": "warning",
         ipv6: false,
-        "find-process-mode": "strict",
+        "find-process-mode": "off",
         profile: {
             "store-selected": true,
             "store-fake-ip": true,
@@ -65,7 +65,7 @@ function overwriteDns(params) {
 
     const dnsOptions = {
         enable: true,
-        "prefer-h3": true,
+        "prefer-h3": false,
         ipv6: false,
         "enhanced-mode": "fake-ip",
         "fake-ip-range": "198.18.0.1/16",
@@ -441,12 +441,12 @@ function overwriteHosts(params) {
 function overwriteTunnel(params) {
     const tunnelOptions = {
         enable: true,
-        stack: "system",
+        stack: "mixed",
         device: "tun0",
         "dns-hijack": ["any:53", "tcp://any:53"],
         "auto-route": true,
         "auto-detect-interface": true,
-        "strict-route": true,
+        "strict-route": false,
         "route-exclude-address": [],
     };
     params.tun = { ...tunnelOptions };
@@ -520,7 +520,6 @@ function overwriteProxyGroups(params) {
         {
             name: "Proxy",
             type: "select",
-            url: "https://cp.cloudflare.com",
             icon: "https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png",
             proxies: [
                 "Auto",
